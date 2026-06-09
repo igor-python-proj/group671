@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 
+
+# PEP-8
 # абстрактный класс
 class Animal(ABC):
     @abstractmethod
@@ -10,6 +12,7 @@ class Animal(ABC):
     def test(self):
         pass
 
+
 # конкретные классы
 class Dog(Animal):
     def make_sound(self):
@@ -18,9 +21,11 @@ class Dog(Animal):
     def test(self):
         print("test in dog")
 
+
 class Cat(Animal):
     def make_sound(self):
         print("мяу")
+
 
 puppy = Dog()
 puppy.make_sound()
